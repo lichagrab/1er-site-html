@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fr">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formation html</title>
+    <style>
+        table, th, td {
+          border:4px solid rgb(36, 22, 167);
+        }
+        </style>
+</head>
+
+<body>
+    <h1>TOUT SAVOIR SUR LE HTML.</h1>
+    <h2>LES TITRES</h2>
+    <p>Les éléments h1 à h6 représentent six niveaux de titres dans un document,<code>h1</code> est le plus important et h6 est le
+        moins important.</p>
+    <h2>LES IMAGES</h2>
+    <p>La balise HTML qui vous permettra d’insérer une image est la suivante :<br>
+        <img src="image/ange2.jpg" alt="Gravure anges de Boucher Nicolas" width="550" height="381"><br>
+
+        Malgré le fait qu’elle peut contenir un large panel d’attributs, le seul et unique essentiel à son
+        fonctionnement est l’attribut SCR=.<br>
+    </p>
+
+    <p> Cet attribut va vous permettre d’indiquer le <strong>chemin (absolu ou relatif) </strong>de votre image.<br>
+        Vous indiquerez donc dans cet attribut et entre guillemets où se trouve votre image sur votre ordinateur,
+        serveur ou tout autre système d’hébergement.</p>
+    <p> l'attribut alt sert à mettre un texte alternatif en cas de non visualisation de l image à l'écran. alt="Gravure
+        anges de Boucher Nicolas"<br></p>
+    <h2>LES LISTES</h2>
+    <h3>LISTE NON ORDONNEE</h3>
+
+    <p> Une liste non ordonnée commence par la balise <code>ul</code>.<br>Chaque élément de la liste commence par la
+        balise<code>li</code>
+
+        Les éléments de la liste seront marqués par des puces (petits cercles noirs) par défaut, exemple:<br>
+        ma liste de peintres préférés:
+    </p>
+    <ul>
+        <li>Picasso</li>
+        <li>Matisse</li>
+        <li>Dali</li>
+        <li>Rembrand</li>
+    </ul>
+
+    <h3>LISTE ORDONNEE</h3>
+    <p>Une liste ordonnée commence par la balise <code>ol</code>Chaque élément de la liste commence par la balise
+        <code>li</code>
+
+        Les éléments de la liste seront marqués par des nombres par défaut,exemple:<br>
+        ma liste d'animaux préférés:
+    </p>
+    <ol>
+        <li>Léopard</li>
+        <li>Lion</li>
+        <li>Aigle</li>
+    </ol>
+
+
+    <h2>LES VIDEOS</h2>
+    <video width="320" height="240" controls>
+        <source src="/video/monsieur_teeshirt1.mp4" type="video/mp4">
+
+    </video>
+    <video controls>
+        <source src="/video/monsieur_teeshirt1.mp4" type="video/mp4">
+
+        <p>Votre navigateur ne prend pas en charge les vidéos HTML5.
+            Voici <a href="monsieur-teeshirt1.mp4">un lien pour télécharger la vidéo</a>.</p>
+    </video>
+    <p>Les navigateurs ne prennent pas en charge l'ensemble des formats vidéo et il est possible de fournir plusieurs
+        sources grâce à des éléments <!--trouver la balise code-->
+        <code>source</code>.<br>
+        le navigateur utilisera la première ressource dont il connaît le format :
+        L'attribut controls sert à controler le debut de la video .d'autre attributs existent comme autoplay, loops,
+        muted.(voir la liste sur W3C)
+     </p>
+
+     <h2>LES TABLEAUX</h2>
+     
+         <table style="width:95%"> <!--width:100% sert à la largeur du tableau-->
+            <caption>LES CONTACTS PAR VILLE </caption>  
+          <tr> <!--tr PERMET dE DEFINIR UNE RANG2E DU TABLEAU-->
+            <th>Company</th> <!--th permet d'inserer des titres dans des cellules horizontal-->
+            <th>Contact</th>
+            <th>Country</th>
+          </tr>
+
+          <tr> <!--th permet de définir une rangée du tableau-->
+            <td>Alfreds Futterkiste</td> <!--td permet d'inserer des éléments dans des cellules en vertical-->
+            <td>Maria Anders</td>
+            <td>Germany</td>
+          </tr>
+          
+          <tr>
+            <td>Centro comercial Moctezuma</td>
+            <td>Francisco Chang</td>
+            <td>Mexico</td>
+          </tr>
+        </table>
+
+        <h2>LES LIENS</h2>
+        
+     <p>Les liens se trouvent dans presque toutes les pages Web. Les liens permettent aux utilisateurs de cliquer sur leur chemin de page en page.<br>
+        La a balise HTML définit un lien hypertexte. Il a la syntaxe suivante :
+        <code>&lt;a href="https://www.portfolio.nathaliegrabowski.fr/"&gt;</code>
+           
+        <a href="https://www.portfolio.nathaliegrabowski.fr/"> Visitez mon site</a>
+        
+    </p>
+    <h2>CITATIONS</h2>
+    <code>&lt;cite&gt;</code> est une balise de phrase, elle donne un effet de style.<br>
+    La balise <code>&lt;q&gt;</code> sert pour de courte citation.<br> 
+
+    <q>To be or not to be.</q>
+
+     <cite>Shakespear</cite>  balise de phrase, ils donnent un effet de style.
+     <p>ici citation du site WWF':</p>
+     <blockquote cite="http://www.worldwildlife.org/who/index.html">
+     For 50 years, WWF has been protecting the future of nature.
+     The world's leading conservation organization,
+     WWF works in 100 countries and is supported by
+     1.2 million members in the United States and
+     close to 5 million globally.
+     </blockquote>
+     <code>&lt;blockquote&gt;</code> est une balise qui spécifie une section qui est citée à partir d'une autre source.
+        Les navigateurs indentent généralement les <code>&lt;blockquote&gt;</code> éléments<br> (regardez l'exemple ci-dessus pour voir comment supprimer l'indentation avec la balise<code>&lt;q&gt;</code> ).
+</body>
+
+</html>
